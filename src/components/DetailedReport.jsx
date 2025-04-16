@@ -5,6 +5,20 @@ import { useEffect, useState } from "react";
 import "../styles/DetailedReportStyle.css";
 
 const DetailedReport = () => {
+  const [data, setData] = useState([]);
+
+  // Load danh sách ban đầu
+  const fetchData = () => {
+    fetch("http://localhost:3001/report")
+      .then((res) => res.json())
+      .then((data) => setData(data))
+      .catch((err) => console.error("Fetch error:", err));
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   const columns = [
     {
       name: "",
@@ -61,17 +75,17 @@ const DetailedReport = () => {
       width: "70px",
     },
   ];
+
   return (
-    <div>
-      <DataTable
-        columns={columns}
-        data={[]}
-        pagination
-        highlightOnHover
-        noDataComponent={
-          <div style={{ padding: "20px" }}>DataTable Không có dữ liệu</div>
-        }
-      />
+    <div className="table-wrapper">
+      <div className="table-header">
+        <h2>Detailed report</h2>
+        <button className="add-btn">
+          <Plus size={18} /> Add Customer
+        </button>
+      </div>
+
+      <DataTable columns={columns} data={data} pagination highlightOnHover />
     </div>
   );
 };
