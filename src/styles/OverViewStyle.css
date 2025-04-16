@@ -1,0 +1,55 @@
+.overview-container {
+  padding: 20px;
+}
+
+.overview-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.overview-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.overview-card {
+  flex: 1;
+  /* min-width: 250px; */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.card-icon {
+  position: absolute;
+  top: 40px;
+  border: 2px solid rgb(225, 106, 179);
+  right: 20px;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.value {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.percent {
+  margin-top: 10px;
+  font-size: 14px;
+  color: green;
+}
+
+.period {
+  color: #999;
+}
+.bg-pink {
+  background-color: rgb(244, 232, 236);
+}
+.bg-blue {
+  background-color: aliceblue;
+}

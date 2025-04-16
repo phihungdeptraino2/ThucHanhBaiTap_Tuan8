@@ -1,0 +1,89 @@
+{
+  "overview": [
+    {
+      "id": "1",
+      "title": "Turnover",
+      "value": "$92,405",
+      "percent": "+5.39%",
+      "icon": "🛒",
+      "bgClass": "bg-pink",
+      "percentColorClass": "percent-green"
+    },
+    {
+      "id": "2",
+      "title": "Profit",
+      "value": "$32,218",
+      "percent": "+5.39%",
+      "icon": "💵",
+      "bgClass": "bg-blue",
+      "percentColorClass": "percent-green"
+    },
+    {
+      "id": "3",
+      "title": "New customer",
+      "value": "298",
+      "percent": "+6.84%",
+      "icon": "👤",
+      "bgClass": "bg-blue",
+      "percentColorClass": "percent-green"
+    }
+  ],
+  "report": [
+    {
+      "name": "Elizabeth Lee1",
+      "company": "AvatarSystems",
+      "value": "$3594",
+      "date": "10/07/2023",
+      "status": "New",
+      "id": "b2da"
+    },
+    {
+      "name": "Carlos Garcia",
+      "company": "SmoozeShift",
+      "value": "$747",
+      "date": "24/07/2023",
+      "status": "New",
+      "id": "69b0"
+    },
+    {
+      "name": "Elizabeth Bailey",
+      "company": "Prime Time Telecom",
+      "value": "$564",
+      "date": "08/08/2023",
+      "status": "In-progress",
+      "id": "4731"
+    },
+    {
+      "name": "Ryan Brown",
+      "company": "OmniTech Corporation",
+      "value": "$541",
+      "date": "31/08/2023",
+      "status": "In-progress",
+      "id": "ab75"
+    },
+    {
+      "name": "Ryan Young",
+      "company": "DataStream Inc.",
+      "value": "$769",
+      "date": "01/05/2023",
+      "status": "Completed",
+      "id": "eb13"
+    },
+    {
+      "name": "Hailey Adams",
+      "company": "FlowRush",
+      "value": "$922",
+      "date": "10/06/2023",
+      "status": "Completed",
+      "id": "8da5"
+    },
+    {
+      "id": "b968",
+      "name": "Phi Hung",
+      "company": "FPT",
+      "value": "999",
+      "date": "10/07/2023",
+      "status": "New"
+    }
+  ]
+}
