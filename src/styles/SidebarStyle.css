@@ -1,0 +1,45 @@
+nav {
+  color: black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.033);
+  height: 100vh;
+  border-radius: 10px;
+
+  background-color: white;
+
+  border-right: 1px solid rgb(242, 236, 236);
+}
+ul {
+  list-style: none;
+  padding: 20px;
+}
+
+nav .logo {
+  color: black;
+}
+
+nav img {
+  width: 80%;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 65px;
+}
+nav li {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+nav li:hover {
+  background-color: pink;
+}
+
+nav li.active {
+  background-color: palevioletred;
+  color: white;
+}
