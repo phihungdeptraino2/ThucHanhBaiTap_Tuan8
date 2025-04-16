@@ -7,7 +7,7 @@ import {
   MessageSquare,
   Code,
 } from "lucide-react";
-
+import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   const navs = [
     { label: "Dashboard", icon: <LayoutDashboard />, path: "/" },
@@ -23,10 +23,14 @@ const Sidebar = () => {
       <h2 className="logo">Logo</h2>
       <ul>
         {navs.map((item, index) => (
-          <li key={index}>
-            <span className="icon">{item.icon}</span>
-            <span className="label">{item.label}</span>
-          </li>
+          <NavLink key={index} to={item.path} end>
+            {({ isActive }) => (
+              <li className={isActive ? "active" : ""}>
+                <span className="icon">{item.icon}</span>
+                <span className="label">{item.label}</span>
+              </li>
+            )}
+          </NavLink>
         ))}
       </ul>
       <img src="/sidebarimage.png" alt="anh lo go" width="200" />
