@@ -54,6 +54,34 @@ const DetailedReport = () => {
     );
     setData(updatedData);
     setShowModal(false);
+
+    if (!editingRow) return;
+
+    fetch(`http://localhost:3001/report/${editingRow.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(editingRow),
+    })
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Update failed");
+        }
+        return res.json();
+      })
+      .then((updatedRow) => {
+        // cập nhật lại danh sách sau khi lưu thành công
+        const updatedData = data.map((item) =>
+          item.id === updatedRow.id ? updatedRow : item
+        );
+        setData(updatedData);
+        setShowModal(false);
+      })
+      .catch((err) => {
+        console.error("PUT error:", err);
+        alert("Lỗi khi cập nhật dữ liệu!");
+      });
   };
 
   const columns = [
